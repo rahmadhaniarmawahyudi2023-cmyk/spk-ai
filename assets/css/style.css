@@ -1,0 +1,547 @@
+/* =====================================
+   GLOBAL
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+background:
+linear-gradient(
+135deg,
+#f5f1ea,
+#efe7dc
+);
+font-family:'Poppins',sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:600;
+}
+
+.card,
+.table,
+.btn{
+    font-size:14px;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:
+    linear-gradient(
+        135deg,
+        #4e342e,
+        #6d4c41,
+        #8d6e63
+        );
+    color:white;
+    overflow-y:auto;
+    box-shadow:
+    5px 0 25px rgba(0,0,0,.25);
+}
+
+.logo{
+    text-align:center;
+    color:#f5e6d3;
+    padding:30px 20px;
+}
+
+.logo i{
+    font-size:52px;
+    color:#ffcc80;
+    margin-bottom:12px;
+}
+
+.logo h4{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    font-weight:700;
+}
+
+.logo small{
+    color:#ffe0b2;
+}
+
+.sidebar-menu{
+    padding:15px;
+}
+
+.sidebar-menu small{
+    display:block;
+    color:#94a3b8;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin:15px 0 10px;
+}
+
+.sidebar-menu a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:12px 15px;
+    margin-bottom:5px;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sidebar-menu a:hover{
+    background:#334155;
+    color:white;
+    transform:translateX(4px);
+}
+
+.sidebar-menu hr{
+    border-color:rgba(255,255,255,.08);
+    margin:15px 0;
+}
+
+.active-menu{
+    background:linear-gradient(
+        135deg,
+        #8d6e63,
+        #5d4037
+    ) !important;
+
+    color:white !important;
+
+    font-weight:600;
+
+    box-shadow:
+        0 8px 20px rgba(93,64,55,.35);
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.content{
+    margin-left:260px;
+    padding:25px;
+}
+
+/* =====================================
+   CARD
+===================================== */
+.card-header{
+    background:
+    linear-gradient(
+        135deg,
+        #6d4c41,
+        #4e342e
+    ) !important;
+    color:white !important;
+    border:none;
+}
+
+.card-modern{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+
+    background:#fffaf5;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+.card-modern .card-header{
+    border:none;
+    padding:15px 20px;
+}
+
+.card-modern .card-body{
+    padding:20px;
+}
+
+/* =====================================
+   TABLE
+===================================== */
+.table{
+    font-size:13px;
+}
+
+.table thead{
+    font-size:13px;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.table-dark{
+    background:#4e342e !important;
+}
+
+.table thead th{
+background:
+linear-gradient(
+135deg,
+#6d4c41,
+#4e342e
+) !important;
+color:white;
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+.btn{
+    border-radius:10px;
+    font-size:13px;
+    padding:8px 15px;
+}
+
+.btn-primary{
+background:
+linear-gradient(
+135deg,
+#8d6e63,
+#5d4037
+);
+border:none;
+}
+
+.btn-success{
+background:
+linear-gradient(
+135deg,
+#a1887f,
+#6d4c41
+);
+border:none;
+}
+
+.btn-warning{
+background:#d7ccc8;
+color:#3e2723;
+border:none;
+}
+
+.btn-danger{
+background:#795548;
+border:none;
+}
+
+/* =====================================
+   DASHBOARD CARD
+===================================== */
+
+.stat-card{
+    background:#fffaf5;
+    border:none;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+}
+
+.stat-card h3{
+    font-size:26px;
+    font-weight:700;
+}
+
+.stat-card p{
+    margin:0;
+    color:#64748b;
+}
+
+/* =====================================
+   TOPSIS BAR
+===================================== */
+
+.bar-ranking{
+    width:0;
+    transition:all 2s ease;
+    font-size:13px;
+    font-weight:600;
+}
+
+.progress{
+    border-radius:20px;
+    background:#efe7dc;
+    overflow:hidden;
+}
+
+.progress-bar{
+    font-size:12px;
+    font-weight:600;
+    color:white;
+}
+
+h1{font-size:34px;}
+h2{font-size:30px;}
+h3{font-size:26px;}
+h4{font-size:22px;}
+h5{font-size:18px;}
+
+.table{
+    font-size:14px;
+}
+
+.card-body{
+    font-size:15px;
+}
+
+.sidebar a{
+    font-size:15px;
+}
+
+/* =========================
+DASHBOARD MODERN
+========================= */
+.dashboard-card{
+background:#fffaf5;
+border:none;
+border-radius:22px;
+overflow:hidden;
+transition:.3s;
+box-shadow:
+0 12px 30px rgba(0,0,0,.08);
+}
+
+.dashboard-card:hover{
+transform:translateY(-5px);
+box-shadow:
+0 20px 40px rgba(93,64,55,.15);
+}
+
+.icon-box{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    background:
+    linear-gradient(
+        135deg,
+        #8d6e63,
+        #5d4037
+    );
+    color:white;
+}
+
+.dashboard-number{
+    font-size:36px;
+    font-weight:700;
+    color:#4e342e;
+    margin:0;
+}
+
+.section-title{
+    color:#4e342e;
+    font-weight:700;
+}
+
+.system-desc{
+    font-size:15px;
+    line-height:1.9;
+    color:#5d4037;
+}
+
+.info-box{
+    background:#f8f4ef;
+    border-radius:15px;
+    padding:20px;
+    margin-top:10px;
+}
+
+.info-box h5{
+    color:#4e342e;
+    font-weight:700;
+}
+
+.info-box p{
+    margin:0;
+    color:#795548;
+    font-size:15px;
+}
+
+/* =====================================
+   OVERRIDE BOOTSTRAP - LOGIN THEME
+===================================== */
+
+.bg-primary,
+.btn-primary,
+.card-header.bg-primary{
+    background:linear-gradient(
+        135deg,
+        #6d4c41,
+        #4e342e
+    ) !important;
+    border:none !important;
+    color:white !important;
+}
+
+.bg-success,
+.btn-success,
+.card-header.bg-success{
+    background:linear-gradient(
+        135deg,
+        #8d6e63,
+        #5d4037
+    ) !important;
+    border:none !important;
+    color:white !important;
+}
+
+.bg-info,
+.card-header.bg-info{
+    background:linear-gradient(
+        135deg,
+        #a1887f,
+        #6d4c41
+    ) !important;
+    border:none !important;
+    color:white !important;
+}
+
+.bg-warning,
+.card-header.bg-warning{
+    background:linear-gradient(
+        135deg,
+        #d7ccc8,
+        #bcaaa4
+    ) !important;
+    color:#3e2723 !important;
+    border:none !important;
+}
+
+.bg-dark,
+.card-header.bg-dark{
+    background:linear-gradient(
+        135deg,
+        #4e342e,
+        #3e2723
+    ) !important;
+    color:white !important;
+}
+
+.btn-danger{
+    background:linear-gradient(
+        135deg,
+        #795548,
+        #4e342e
+    ) !important;
+    border:none !important;
+}
+
+.badge.bg-primary{
+    background:#6d4c41 !important;
+}
+
+.table-dark{
+    background:#4e342e !important;
+}
+
+.table-success{
+    background:#efebe9 !important;
+}
+
+.table-warning{
+    background:#f5f1ea !important;
+}
+
+.progress-bar{
+    background:linear-gradient(
+        135deg,
+        #8d6e63,
+        #5d4037
+    ) !important;
+}
+
+.alert-info{
+    background:#f8f4ef !important;
+    border:1px solid #d7ccc8 !important;
+    color:#5d4037 !important;
+}
+
+.alert-success{
+    background:#efebe9 !important;
+    border:1px solid #bcaaa4 !important;
+    color:#4e342e !important;
+}
+
+.alert-warning{
+    background:#f5f1ea !important;
+    border:1px solid #d7ccc8 !important;
+    color:#5d4037 !important;
+}
+
+/* Tombol Hamburger */
+.menu-toggle{
+    display:none;
+    position:fixed;
+    top:15px;
+    left:15px;
+    z-index:1200;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:#5d4037;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* Overlay */
+.overlay{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:998;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .sidebar{
+        left:-260px;
+        transition:.3s;
+        z-index:999;
+    }
+
+    .sidebar.show{
+        left:0;
+    }
+
+    .content{
+        margin-left:0;
+        padding:70px 15px 15px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .overlay.show{
+        display:block;
+    }
+}
